@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>Enlightenme </title>
+    </head>
+    <body>
+      <header> <div class="header-left">
+        <h2 class="logo-link"><a href="https://injialasttal.com" class="logo-link">Inji Alasttal </a></h2>
+      </header>
+
+    <div class="container">
+      <h1 class="h1">Enlightenme </h1>
+<p class="paragraph">
+  Challenge: Identify pain points of the current app and suggest fixes to enhance the user experience.
+
+<br>Deliverables: Define. User research. Persona. Sitemap. Sketches. Prototype.
+
+<br>Role: UX Designer
+</p>
+<img src="images/enlight.png" alt="mobile" class="responsive1">
+
+<p class="paragraph">
+  Enlightenme is a mobile app where the student can find a tutor and a teacher can search to find students.</p>
+<br>
+<br>
+     <h2>Problem </h2>
+     <p>There are many people looking for tutors nearby, and sometimes they are filled to find one. Also, teachers are looking to find students so they can improve their teaching skills and increase their income and financial stability.</p>
+
+         <br>
+         <h2>Solution</h2>
+         <p>
+          Design a mobile app where students can find teachers nearby in all the subjects they want, and teachers can search and find opportunities in online education to improve their skills and increase income through private tutoring.
+         </p>
+         <img src="images/Frame.png" alt="Nature" class="responsive">
+
+        
+              <h2>User Research and Create Persona: </h2>
+              <p>
+                People are looking for tutors nearby because many people are very busy and can’t teach their children by themselves, so they lean on finding a tutor to improve their children’s understanding and confidence in approaching tasks. Also, there are teachers looking to improve their skills and increase their income, and by giving tutoring lessons, they can make a difference.
+                Based on these findings, we create personas who are our target users and our study.
+             </p>
+             <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 2</div>
+                  <img src="images/Clara.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 2</div>
+                  <img src="images/Lyam.png" style="width:100%">
+                </div>
+                
+               
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                </div>
+                <br>
+                <br>
+                <section class="ideation"><h1>IDEATION</h1>
+                <p>For the initial user research, I conducted a study and 
+                  created the personas to analyze pain points and determine priorities. Then I generated “AI” to understand where in the process users were having troubles, created sketches, Lo-Fi and Hi-Fi clickable prototypes. The project timeline is two weeks. Now let’s go deeper into each step.</p>
+                </section>
+                <br>
+           
+
+                <h2>Sitemap 
+                </h2>
+                <p>An application sitemap (information architecture) presents the steps a user typically goes through to look for a subject, find the right teacher, and contact him.
+
+                </p>
+                <img src="images/sitemap.png" alt="sitemap" class="responsive">
+                <section class="ideation"><h1>PROTOTYPE
+                </h1>
+                <h2>Low-Fi Prototype:</h2>
+                <p>I developed the clickable prototype for validation testing, refined the user interface concepts, and produced low-fidelity wireframes. After doing validation testing, everything went well, and then I made my Hi-Fi prototype.</p>
+                </section>               
+                
+                <img src="images/lofi.png" alt="low fi" class="responsive">
+                <img src="images/lofi2.png" alt="low fi" class="responsive">
+             
+                <br>
+                <h2>Hi-Fi Prototype:</h2>
+                <p>After finishing the validation testing, I turned the low-fi into a hi-fi
+                   prototype, and the prototype was navigated as it was supposed to be and came to the testing process as it showed a responsive design.</p>         
+                        <img src="images/hifi.png" alt="hifi" class="responsive">
+                <img src="images/hifi1.png" alt="hifi" class="responsive">
+
+
+ 
+                <br>
+                <h1>Validation
+                </h1>
+                <h2>Interactive Prototype:
+                </h2>
+                <p>I set up the interactive prototype to show the suggested flow when users search inside the app. I created an animated prototype that contains activities from the app.</p>
+
+                <img src="images/vedio.gif" alt="hifi" class="responsive">
+
+                <h1 class="con"> Conclusion:
+                </h1>
+                <p class="end">After designing and completing the prototype, and conducting testing of the mobile app, i was pleased to observe its exemplary responsive design. The user experience was further enhanced by seamless navigation between pages, with intuitively placed interactive elements that proved highly clickable, contributing to an overall user-friendly and engaging interface.</p>
+                    <h2><a href="https://injialasttal.com" class="logo-link">Inji Alasttal</a></h2>
+
+                <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+// Automatic slideshow
+let slideInterval = setInterval(function() {
+  plusSlides(1); // Simulate a click on the next button
+}, 3000); // Change slide every 3 seconds (adjust as needed)
+
+
+//slider2
+
+                
+                </script>
+    </div></body>
+</html>
